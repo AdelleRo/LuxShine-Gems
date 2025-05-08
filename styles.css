@@ -42,7 +42,12 @@ header{
 }
 .menu-nav-item{
     color:#FFFCF8;
-    width: 20%;
+    width: 15%;
+    padding: 0 5px;
+}
+.menu-nav-item:hover{
+    background-color: #FFFCF8;
+    color:#242424;
 }
 .nav-icon{
     padding: 5px;
@@ -55,12 +60,13 @@ footer{
     background-color: #242424;
     color:#FFFCF8;
     text-align: center;
-    padding: 0 10%;
+    padding: 0 10% 10px 10%;
 }
 .footer-nav{
     display: flex;
     justify-content: space-evenly;
     text-align: left;
+    margin-bottom: 20px;
 }
 .footer-link{
     display: flex;
@@ -72,8 +78,10 @@ footer{
     margin: 0;
 }
 .social-icon{
-    align-self: center;
-    padding-right: 10px;
+    padding: 3px 10px 0 0;
+}
+.mobile-social-icons{
+    display: none;
 }
 .footer-line{
     color: #FFFCF8;
@@ -110,21 +118,62 @@ footer{
 
     /*Mobile footer*/
     footer{
-        padding: 0 20px;
+        padding: 0 20px 10px 20px;
     }
-    .socials-link-heading, .socials-link-p{
+    .footer-logo{
+        height: 150px;
+    }
+    .desktop-socials-links{
         display: none;
     }
     .footer-nav{
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    .footer-nav > div{
-        width: 40%;
-    }
-    .socials-links{
-        order: 2;
-
+    .mobile-social-icons{
+        display: flex;
+        margin-top: 20px;
     }
 }
 
 
+
+/*Home page styles*/
+.categories-hp{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.category-card-hp{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+}
+.bg-necklaces{
+    background-image: url("./images/necklacecat.jpg")
+}
+.bg-earrings{
+    background-image: url("./images/earrings.jpg");
+}
+.bg-watches{
+    background-image: url("./images/watch.jpg");
+}
+.category-card-hp > h3 {
+    width: 200px;
+    height: 70px;
+    background-color:#fffcf895;
+    align-content: center;
+}
+.most-loved-carousel-hp{
+    padding: 0 10%;
+}
+.carousel-products-hp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 90px;
+}
+.carousel-btn-black{
+    color:#242424;
+}
