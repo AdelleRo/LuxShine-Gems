@@ -199,6 +199,11 @@ footer{
     background-size: cover;
     background-position: center;
 }
+.bg-rings{
+    background-image: url("./images/ringcat.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .category-card > h4 {
     width: 200px;
     height: 70px;
@@ -379,16 +384,137 @@ footer{
 
 
 /*Collection page*/
-.collection-categories{
-    padding: 0 10%;
+.collection-header{
+    background-image: url("./images/store.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
 }
-
+.collectionh1{
+    background-color: #2424243e;
+    color:#FFFCF8;
+    text-align: center;
+    height: 100%;
+    align-content: end;
+    padding-bottom: 10px;
+}
+.collection-categories{
+    padding: 5% 10%;
+}
 .collection-category-products{
-    padding: 0 10%;
+    padding: 2% 10%;
+    text-align: center;
 }
 .collection-category-row{
     display: flex;
+    justify-content: center;
+}
+.cat-row-div{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    margin: 20px 0;
+}
+.collection-card{
+    width: 100%;
+    height: 250px;
+}
+.collection-card > h4 {
+    width: 350px;
+    height: 130px;
+}
+.cat-50{
+    width: 100%;
 }
 .gallery-product{
-    height: 150px;
+    width: 50%;
+    height: 100%;
+}
+.gallery-product > div{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery-necklace1{
+    background-image: url("./images/necklace1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.gallery-necklace2{
+    background-image: url("./images/necklace2.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.gallery-bracelet1{
+    background-image: url("./images/bracelet2.jpg");
+    background-size: cover;
+}
+.gallery-bracelet2{
+    background-image: url("./images/bracelet3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-earrings1{
+    background-image: url("./images/earrings2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-earrings2{
+    background-image: url("./images/earrings3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-watch1{
+    background-image: url("./images/watch3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-watch2{
+    background-image: url("./images/watch2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-ring1{
+    background-image: url("./images/ring2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-ring2{
+    background-image: url("./images/rings.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.products-no-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 30px 0;
+}
+.explore-btn{
+    background-color:#20613B;
+    color:#FFFCF8;
+    border-radius: 15px;
+    text-align: center;
+    padding: 7px 10px;
+    width: 150px;
+    font-weight: 500;
+}
+.spring-sale-category{
+    width: 100vw;
+    background-image: url("./images/springsalenarrow.jpg");
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.spring-sale-category > h2{
+    text-align: center;
+    align-content: center;
+    width: 80%;
+    background-color:#fffcf8bc;
+    border-radius: 8px;
+    height: 250px;
 }
