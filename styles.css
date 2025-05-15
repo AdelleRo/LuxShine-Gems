@@ -29,6 +29,9 @@ header{
 .menu-icon{
     display: none;
 }
+#mobile-nav-toggle{
+    display: none;
+}
 .search-bar-form{
     display: flex;
     gap: 0;
@@ -57,6 +60,9 @@ header{
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0;
+}
+.mobile-menu{
+    display: 0;
 }
 .menu-nav-item{
     color:#FFFCF8;
@@ -116,12 +122,12 @@ footer{
         display: inline;
         text-align: left;
     }
+    .menu-nav-bar, .mobile-menu{
+        display: none;
+    }
     .search-bar-div{
         display: none;
         width: 0;
-    }
-    .top-nav-bar{
-        justify-content: space-between;
     }
     .nav-logo{
         height: 80px;
@@ -129,8 +135,22 @@ footer{
     .nav-icons{
         text-align: right;
     }
-    .menu-nav-bar{
-        display: none;
+    .top-nav-bar{
+        justify-content: space-between;
+    }
+
+    #mobile-nav-toggle:checked ~ .mobile-menu{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        z-index: 2;
+        position: fixed;
+        background-color: #242424;
+        left: 0;
+        padding-top: 20px;
     }
 
     /*Mobile footer*/
@@ -317,12 +337,13 @@ footer{
         display: none;
     }
     .carousel-hp-mobile{
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     .category-link{
         margin: 10px 0;
         width: 100%;
+
     }
     .category-card{
         width: 100%;
@@ -517,4 +538,58 @@ footer{
     background-color:#fffcf8bc;
     border-radius: 8px;
     height: 250px;
+}
+
+/*Media queries for categories page*/
+@media screen and (max-width: 1130px){
+    .gallery-product{
+        width: 100%;
+    }
+    .gone1{
+        display: none;
+        width: 0;
+    }
+    .div-expand{
+        width: 70%;
+    }
+    .div-product-expand{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 800px){
+    .collection-header{
+        height: 100vh;
+    }
+    .collectionh1{
+        padding-bottom: 40px;
+    }
+    .gone2{
+        display: none;
+        width: 0;
+    }
+    .div-expand{
+        width: 100%;
+    }
+    .cat-row-div{
+        height: 180px;
+    }
+    .div-product-expand{
+        width: 0;
+    }
+    .collection-card{
+        height: 200px;
+    }
+    .collection-card > h4 {
+        width: 80%;
+        height: 50%;
+    }
+    .collection-categories{
+        margin-bottom: 50px;
+    }
+    .spring-sale-category{
+        height: 250px;
+    }
+    .spring-sale-category > h2{
+        height: 150px;
+    }
 }

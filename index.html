@@ -34,9 +34,21 @@
             <nav class="header-nav">
                 <div class="top-nav-bar">
                     <div class="menu-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFCF8" class="bi bi-list icons" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg>
+                        <input type="checkbox" id="mobile-nav-toggle"/>
+                        <label for="mobile-nav-toggle" class="mobile-nav-toggle-label">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFCF8" class="bi bi-list icons" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="mobile-menu">
+                            <a href="./sale.html" class="mobile-nav-item">SALE</a>
+                            <a href="./newin.html" class="mobile-nav-item">NEW IN</a>
+                            <a href="./sets.html" class="mobile-nav-item">SETS</a>
+                            <a href="./collection.html" class="mobile-nav-item">OUR COLLECTION</a>
+                            <a href="..." class="mobile-nav-item">ABOUT</a>
+                        </div>
                     </div>
                     <div class="search-bar-div">
                         <form class="search-bar-form">
@@ -48,12 +60,12 @@
                             </button>
                         </form>
                     </div>
-                    <div>
+                    <div class="mobile-nav-gone">
                         <a href="index.html">
                             <image src="./images/Logonobg.png" alt="LuxShine Gems Logo" class="nav-logo" height="100px"/>
                         </a>
                     </div>
-                    <div class="nav-icons">
+                    <div class="nav-icons mobile-nav-gone">
                         <a href="profile.html" class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFCF8" class="bi bi-person-fill icons" viewBox="0 0 16 16">
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
