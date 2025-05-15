@@ -347,7 +347,8 @@ footer{
         display: none;
     }
     .carousel-hp-mobile{
-        height: 100%;
+        padding-top: 80px;
+        height: 100vh;
         width: 100%;
     }
     .category-link{
