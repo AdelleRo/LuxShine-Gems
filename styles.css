@@ -348,7 +348,7 @@ footer{
     }
     .carousel-hp-mobile{
         padding-top: 80px;
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     .category-link{
@@ -413,6 +413,7 @@ footer{
 .productname{
     margin: 5px;
 }
+
 
 
 /*Collection page*/
@@ -568,8 +569,12 @@ footer{
     }
 }
 @media screen and (max-width: 800px){
+    .storepages{
+        padding-top: 120px;
+    }
     .collection-header{
         height: 100vh;
+        padding-top: 50px;
     }
     .collectionh1{
         padding-bottom: 40px;
