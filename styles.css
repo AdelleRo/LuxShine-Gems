@@ -117,6 +117,9 @@ footer{
 @media screen and (max-width: 800px){
     header{
         padding: 0 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
     }
     .menu-icon{
         display: inline;
@@ -137,20 +140,27 @@ footer{
     }
     .top-nav-bar{
         justify-content: space-between;
+
+    }
+    .mobile-nav-item{
+        text-decoration: none;
+        color:#FFFCF8;
+        margin: 10px 0;
     }
 
     #mobile-nav-toggle:checked ~ .mobile-menu{
         display: flex;
-        justify-content: space-evenly;
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        text-align: center;
+        text-align: left;
         z-index: 2;
         position: fixed;
         background-color: #242424;
         left: 0;
-        padding-top: 20px;
+        margin-top: 20px;
+        padding-top: 50px;
+        padding-left: 100px;
     }
 
     /*Mobile footer*/
