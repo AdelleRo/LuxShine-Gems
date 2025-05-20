@@ -92,8 +92,59 @@
                 </div>
             </nav>
         </header>
-        <main>
-
+        <main class="cart-main">
+            <h1 class="lux-roman-font">YOUR CART</h1>
+            <div class="cart-items-container">
+                <div class="cart-headings">
+                    <h5>Product</h5>
+                    <h5>Quantity</h5>
+                    <h5>Price</h5>
+                </div>
+                <hr>
+                <div class="cart-product">
+                    <img src="" alt="product in cart">
+                    <div class="product-info-cart">
+                        <p><strong>Product name</strong></p>
+                        <p>Gold</p>
+                    </div>
+                    <div class="quantity-choice-product">
+                        <button type="button" class="quantity-btn">-</button>
+                        <p class="no-margin">1</p>
+                        <button type="button" class="quantity-btn">+</button>
+                    </div>
+                    <div>
+                        <p class="cart-item-price"><strong>00.00€</strong></p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="order-sum-container">
+                <h5>Order Summary</h5>
+                <hr>
+                <div>
+                    <div class="order-sum">
+                        <p>Subtotal</p>
+                        <p>00.00€</p>
+                    </div>
+                    <div class="order-sum">
+                        <p>Shipping</p>
+                        <p>00.00€</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="order-sum">
+                    <p><strong>Total</strong></p>
+                    <p><strong>00.00€</strong></p>
+                </div>
+                <div class="checkout-btn-container">
+                    <button type="submit" class="checkout-btn">Proceed to checkout</button>
+                </div>
+            </div>
         </main>
         <footer>
             <image src="./images/Logonobg.png" class="footer-logo" alt="LuxShine Gems Logo" height="200px"/>

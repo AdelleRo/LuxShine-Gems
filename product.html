@@ -92,209 +92,286 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="collection-header">
-                <h1 class="lux-roman-font collectionh1">OUR COLLECTION</h1>
-            </div>
-            <div class="collection-categories">
-                <div class="collection-category-row">
-                    <div class="cat-row-div div-expand">
-                        <a href="./necklaces.html" class="category-link cat-50">
-                            <div class="category-card bg-necklaces collection-card">
-                                <h4>Necklaces</h4>
-                            </div>
-                        </a>
+        <main class="product-page">
+            <div class="product-container">
+                <img src="./images/ring3.jpg" alt="product" class="product-img"/>
+                <div class="product-text">
+                    <h1>Product name</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <ul>
+                        <li>At vero eos et accusam et justo duo dolores et ea rebum.</li>
+                        <li>Stet clita kasd gubergren, no sea takimata sanctus est</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <hr>
+                    <div class="type-choice">
+                        <p class="choice-p">Type</p>
+                        <input type="radio" name="type" value="Gold" id="gold" class="type-radio">
+                        <label for="gold" class="type-labels">Gold</label>
+                        <input type="radio" name="type" value="Silver" id="silver" class="type-radio">
+                        <label for="silver" class="type-labels">Silver</label>
+                        <input type="radio" name="type" value="Black" id="black" class="type-radio">
+                        <label for="black" class="type-labels">Black</label>
                     </div>
-                    <div class="cat-row-div div-product-expand">
-                        <a href="./product.html" class="category-link gallery-product gone1">
-                            <div class="gallery-necklace1">
-
-                            </div>
-                        </a>
-                        <a href="./product.html" class="category-link gallery-product gone2">
-                            <div class="gallery-necklace2 ">
-
-                            </div>
-
-                        </a>
+                    <hr>
+                    <div class="quantity-choice-product">
+                        <p class="choice-p">Quantity</p>
+                        <div>
+                            <button type="button" class="quantity-btn">-</button>
+                            <p class="no-margin">1</p>
+                            <button type="button" class="quantity-btn">+</button>
+                        </div>
                     </div>
-                </div>
-                <div class="collection-category-row">
-                    <div class="cat-row-div div-product-expand">
-                        <a href="./product.html" class="category-link gallery-product gone1">
-                            <div class="gallery-bracelet1 ">
-
-                            </div>
-                        </a>
-                        <a href="./product.html" class="category-link gallery-product gone2">
-                            <div class="gallery-bracelet2 ">
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-row-div div-expand">
-                        <a href="./bracelets.html" class="category-link cat-50">
-                            <div class="category-card bg-bracelets collection-card">
-                                <h4>Bracelets</h4>
-                            </div>
-                        </a>
-                    </div>
+                    <hr>
+                    <form class="add-btns-container">
+                        <button class="add-btn">Add to wishlist</button>
+                        <button class="add-btn">Add to basket</button>
+                    </form>
                 </div>
             </div>
-            <div class="collection-category-products">
-                <h2 class="lux-roman-font carousel-titles-products">JEWELRY SETS</h2>
-                <hr class="horizontal-line-black">
-                <div class="products-no-carousel">
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
+            <div class="suggestions-container">
+                <div class="most-loved-carousel-hp">
+                    <h2 class="lux-roman-font carousel-titles-products">MORE LIKE THIS</h2>
+                    <hr class="horizontal-line-black"/>
+                    <div id="mostLovedCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-products-hp">
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-products-hp">
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev carousel-btn-black" type="button" data-bs-target="#mostLovedCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next carousel-btn-black" type="button" data-bs-target="#mostLovedCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <button type="submit" class="explore-btn">Explore</button>
+                <div class="most-loved-mobile">
+                    <h2 class="lux-roman-font carousel-titles-products">MORE LIKE THIS</h2>
+                    <hr class="horizontal-line-black"/>
+                    <div class="most-loved-mobile-container">
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="collection-categories">
-                <div class="collection-category-row">
-                    <div class="cat-row-div div-expand">
-                        <a href="./earrings.html" class="category-link cat-50">
-                            <div class="category-card bg-earrings collection-card">
-                                <h4>Earrings</h4>
+            <div class="suggestions-container">
+                <div class="most-loved-carousel-hp">
+                    <h2 class="lux-roman-font carousel-titles-products">YOU MIGHT LIKE</h2>
+                    <hr class="horizontal-line-black"/>
+                    <div id="mostLovedCarousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-products-hp">
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="cat-row-div div-product-expand">
-                        <a href="./product.html" class="category-link gallery-product gone1">
-                            <div class="gallery-earrings1 ">
-
+                            <div class="carousel-item">
+                                <div class="carousel-products-hp">
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                    <div>
+                                        <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                                        <p>Product</p>
+                                        <h6>00.00€</h6>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <a href="./product.html" class="category-link gallery-product gone2">
-                            <div class="gallery-earrings2 ">
-
-                            </div>
-
-                        </a>
+                        </div>
+                        <button class="carousel-control-prev carousel-btn-black" type="button" data-bs-target="#mostLovedCarousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next carousel-btn-black" type="button" data-bs-target="#mostLovedCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <div class="collection-category-row">
-                    <div class="cat-row-div div-product-expand">
-                        <a href="./product.html" class="category-link gallery-product gone1">
-                            <div class="gallery-watch1 ">
-
-                            </div>
-                        </a>
-                        <a href="./product.html" class="category-link gallery-product gone2">
-                            <div class="gallery-watch2 ">
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-row-div div-expand">
-                        <a href="./watches.html" class="category-link cat-50">
-                            <div class="category-card bg-watches collection-card">
-                                <h4>Watches</h4>
-                            </div>
-                        </a>
+                <div class="most-loved-mobile">
+                    <h2 class="lux-roman-font carousel-titles-products">YOU MIGHT LIKE</h2>
+                    <hr class="horizontal-line-black"/>
+                    <div class="most-loved-mobile-container">
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
+                        <div class="mobile-product-card">
+                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
+                            <p>Product</p>
+                            <h6>00.00€</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="collection-category-row">
-                    <div class="cat-row-div div-expand">
-                        <a href="./rings.html" class="category-link cat-50">
-                            <div class="category-card bg-rings collection-card">
-                                <h4>Rings</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cat-row-div div-product-expand">
-                        <a href="./product.html" class="category-link gallery-product gone1">
-                            <div class="gallery-ring1 ">
-
-                            </div>
-                        </a>
-                        <a href="./product.html" class="category-link gallery-product gone2">
-                            <div class="gallery-ring2 ">
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="collection-category-products">
-                <h2 class="lux-roman-font carousel-titles-products">NEW IN</h2>
-                <hr class="horizontal-line-black">
-                <div class="products-no-carousel">
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="product.html" class="productlink">
-                            <img src="./images/necklace1.jpg" class="d-block" height="220px" alt="...">
-                            <p>Product</p>
-                            <h6>00.00€</h6>
-                        </a>
-                    </div>
-                </div>
-                <button type="submit" class="explore-btn">Explore</button>
-            </div>
-            <div class="spring-sale-category">
-                <a href="sale.html" class="saleslink">
-                    <h2>SPRING SALE</h2>
-                </a>
             </div>
         </main>
         <footer>
