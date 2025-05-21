@@ -724,7 +724,7 @@ input[type="radio"]{
 
 /*Cart styles*/
 .cart-main{
-    padding: 0 10%;
+    padding: 5% 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -732,7 +732,7 @@ input[type="radio"]{
 .cart-main > h1 {
     display: block;
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 5%;
     width: 100vw;
 }
 .cart-items-container{
@@ -740,26 +740,51 @@ input[type="radio"]{
 }
 .cart-headings{
     display: flex;
+    padding-top: 25px;
+}
+.cart-headings > h6 {
+    margin: 0;
+}
+.producth{
+    width: 65%;
+    padding-left: 20px;
+}
+.quantityh{
+    width: 15%;
+}
+.product-container-cart{
+    display: flex;
+    padding-left: 20px;
+    width: 100%;
 }
 .cart-product{
     display: flex;
+    width: 100%;
 }
 .cart-product > div {
     margin: 0 20px;
     align-self: center;
     padding: 0;
 }
+.cart-item-img{
+    width: 20%;
+}
 .cart-item-price{
     margin: 0;
 }
 .product-info-cart{
-    width: 30%;
+    width: 50%;
+}
+.product-info-cart > p {
+    margin: 0;
+    top: 0;
 }
 .order-sum-container{
     background-color: #20613B;
     color: #FFFCF8;
-    padding: 10px 50px;
+    padding: 25px 50px;
     width: 40%;
+    height: fit-content;
 }
 .order-sum{
     display: flex;
@@ -776,4 +801,62 @@ input[type="radio"]{
     border: none;
     border-radius: 8px;
     padding: 8px 50px;
+}
+
+/*Media queries for cart page*/
+@media screen and (max-width: 1300px){
+    .cart-items-container{
+        width: 100%;
+    }
+    .quantityh{
+        width: 100px;
+    }
+    .cart-item-img{
+        width: 15%;
+    }
+    .order-sum-container{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:800px){
+    .cart-main{
+        padding-top: 17%;
+    }
+    .producth{
+        width: 57%;
+    }
+}
+@media screen and (max-width: 650px){
+    .cart-main{
+        padding-top: 25%;
+    }
+    .product-container-cart{
+        padding-left: 0;
+    }
+    .cart-product{
+        flex-wrap: wrap;
+    }
+    .cart-headings{
+        display: none;
+    }
+    .cart-item-img{
+        width: 30%;
+    }
+    .product-info-cart{
+        width: 60%;
+    }
+    .quantity-choice-product{
+        width: 50%;
+    }
+    .delete-btn{
+        order: 2;
+    }
+    .quantity-choice-product{
+        order: 3;
+    }
+    .cart-item-price-div{
+        order: 4;
+    }
+
 }
