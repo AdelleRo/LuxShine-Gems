@@ -75,9 +75,19 @@ header{
     background-color: #FFFCF8;
     color:#242424;
 }
+.menu-nav-item:active{
+    background-color:#C0E2BE;
+    font-weight: bold;
+}
 .nav-icon{
     padding: 5px;
     text-decoration: none;
+}
+.icons:hover{
+    fill:#C0E2BE;
+}
+.icons:active{
+    fill:#20613B;
 }
 
 
@@ -101,6 +111,12 @@ footer{
     padding: 3px 0;
     align-content: center;
     text-decoration: none;
+}
+.footer-link:hover{
+    text-decoration: underline;
+}
+.footer-link:active{
+    color:#C0E2BE;
 }
 .footer-link > p{
     margin: 0;
@@ -147,6 +163,12 @@ footer{
         text-decoration: none;
         color:#FFFCF8;
         margin: 10px 0;
+    }
+    .mobile-nav-item:hover{
+        text-decoration: underline;
+    }
+    .mobile-nav-item:active{
+        color:#C0E2BE;
     }
 
     #mobile-nav-toggle:checked ~ .mobile-menu{
@@ -244,6 +266,12 @@ footer{
     border-radius: 8px;
     color:#242424;
 }
+.category-card > h4:hover, .saleslink:hover{
+    background-color:#fffcf8dd;
+}
+.category-card > h4:active, .saleslink > h2:active{
+    font-weight: 700;
+}
 .carousel-titles-products{
     text-align: center;
 }
@@ -263,7 +291,7 @@ footer{
     justify-content: center;
     padding: 30px 90px;
 }
-.carousel-products-hp > div {
+.carousel-products-hp > div, .storeproducts > div, .products-no-carousel > div {
     margin: 0 1%;
 }
 .productlink{
@@ -309,7 +337,13 @@ footer{
     border: none;
     background-color: #C0E2BE;
 }
-
+.email-arrow:hover{
+    fill:#FFFCF8;
+}
+.newsletter-email-form > button:active, .email-arrow:active{
+    background-color:#242424;
+    fill:#FFFCF8;
+}
 .about-section-hp{
     padding: 50px 10%;
     display: flex;
@@ -537,6 +571,14 @@ footer{
     padding: 7px 10px;
     width: 150px;
     font-weight: 500;
+}
+.btn-effects:hover{
+    background-color: #C0E2BE;
+    border-color:#C0E2BE;
+    color:#242424;
+}
+.btn-effects:active{
+    color:#FFFCF8;
 }
 .spring-sale-category{
     width: 100vw;
@@ -783,6 +825,9 @@ input[type="radio"]{
     margin: 0;
     top: 0;
 }
+.delete-btn:hover{
+    cursor: pointer;
+}
 .order-sum-container{
     background-color: #20613B;
     color: #FFFCF8;
@@ -803,9 +848,19 @@ input[type="radio"]{
 .checkout-btn{
     background-color: #FFFCF8;
     color:#242424;
-    border: none;
     border-radius: 8px;
     padding: 8px 50px;
+    border-color:#FFFCF8;
+
+}
+.checkout-btn:hover{
+    background-color: #C0E2BE;
+    border-color: #C0E2BE;
+    color:#242424;
+}
+.checkout-btn:active{
+    font-weight: bold;
+    border-color: #242424;
 }
 
 /*Media queries for cart page*/
