@@ -887,10 +887,13 @@ input[type="radio"]{
     flex-wrap: wrap;
 }
 .input-container {
-    margin: 10px 60px;
+    margin: 10px 50px;
 }
 .profile-input{
     width: 270px;
+    border-width: 1px;
+    border-color: #2424247c;
+    border-radius: 8px;
 }
 .edit-btn{
     background-color: #20613B;
@@ -908,6 +911,9 @@ input[type="radio"]{
     margin: 5px;
     margin-right: 50px;
 }
+.wishlist-container, .recents-container{
+    margin: 60px 0;
+}
 .wishlist-top{
     display: flex;
     justify-content: space-between;
@@ -919,6 +925,7 @@ input[type="radio"]{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 .wishlist-items > div {
     margin: 10px 1%;
@@ -930,6 +937,11 @@ input[type="radio"]{
 
 
 /*Media queries for profile page*/
+@media screen and (max-width: 1500px){
+    .profile-form > div{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 800px){
     .profile-main{
         padding: 10% 5%;
